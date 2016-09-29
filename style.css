@@ -1,0 +1,79 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	background: rgba(255, 255, 255, 1);
+	top: 0;
+
+	-webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.3);
+}
+
+.column-left {
+	width: 50%;
+	float: left;
+}
+.column-right {
+	width: 50%;
+	float: right;
+}
+
+main {
+	width: 780px;
+	margin: 130px auto 0 auto;
+}
+
+main .section-info p {
+	margin: 0;
+	text-indent: 30px;
+}
+
+main .section-info .column-left span {
+	display: block;
+	text-align: center;
+}
+
+main .section-info .frontend {
+	color: #E7662B;
+	font-weight: bold;
+	font-size: 40px;
+	position: relative;
+	padding-top: 15px;
+}
+
+main .section-info .frontend::before {
+	content: attr(data-text);
+	color: #CDE9ED;
+	position: absolute;
+	z-index: -1;
+	font-size: 60px;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+.circle {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+}
+
+.circle.circle-fill {
+	background: #FF6621;
+}
+
+.circle.circle-empty {
+	border: 2px solid #FF6621;
+}
